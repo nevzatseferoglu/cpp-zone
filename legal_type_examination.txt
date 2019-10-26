@@ -1,0 +1,44 @@
+/* Note : It does not represents the code itself */
+/* Just for remind something to myself  */
+
+/* Standart I/O stream header */
+#include <iostream>
+
+/* Macros defined in this header */ 
+#include <limit>
+{
+    /* Bools , truth testing */
+    bool b; 
+    /* It can be initialized with any kind of integral type */
+
+    /* Such as int */
+    b = 2,3,5 /*It is legal to use ISO_656 */
+    b = 'a' , 'b' /* it is alose legal , but ... */
+
+    /* We can do any kind of arithmetic operation with bool type */
+
+    /* Hint */
+
+    /* A pointer can be implicitly converted to boolean , */
+    /* Non-zero pointers converts to true */
+
+    /* All those compare statement legal */
+    (b1 && b2)
+    (b1 && bool(b2))
+    (bool(b1) && b2)
+    (bool(b1) && bool(b2))
+
+    /* The value of sizeof(bool) is implementation defined 
+        and might differ from 1 */
+    
+    /* All built-in operators return bool */
+
+    /* Copyright cppreference.com */
+    
+    // streams are also convertible to bool
+    std::cout << "Enter 'quit' to quit.\n";
+    for(std::string line;    std::cout << "> "
+                          && std::getline(std::cin, line)
+                          && line != "quit"; )
+        ;
+}

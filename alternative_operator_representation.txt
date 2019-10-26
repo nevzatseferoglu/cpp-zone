@@ -1,0 +1,23 @@
+There are alternative spellings for several operators and other
+tokens that use non-ISO646 characters.
+
+&& 	and
+&= 	and_eq
+& 	bitand
+| 	bitor
+~ 	compl
+! 	not
+!= 	not_eq
+|| 	or
+|= 	or_eq
+^ 	xor
+^= 	xor_eq
+{ 	<%
+} 	%>
+[ 	<:
+] 	:>
+# 	%:
+## 	%:%:
+
+The same words are defined in the C programming language in the include file <iso646.h> as macros. Because in C++ these are built into the language,
+ the C++ version of <iso646.h>, as well as <ciso646>, does not define anything. 
