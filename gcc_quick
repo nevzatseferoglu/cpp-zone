@@ -1,0 +1,45 @@
+-c , Create an new object file , but do not link , The ultimate
+output is in the form of an objeect file for each source file.
+============================
+-S , take an non assembler input file and produce a new new
+assembly file.
+.c , .i , etc ---> .s
+* Input file do not require an compilation are ignored
+============================
+-o place the outpout file
+default a.out
+============================
+-### comments are not executed ,
+this's useful for shel scripting and capture the driver-generated
+command lines.
+===============================
+-ansi ,in C , equivalent to -std=c90
+-ansi ,in C++ , equivalent to -std=c++98
+=================================
+Do not use -srd=c++0x instead of -std=c++11
+=================================
+[-o supid_filename] to only the changing the name of .o .c .cpp ... files
+==================================
+A library is a collection of pre-compiled object 
+files that can be linked into your programs via the linker. 
+
+Static Lib = .a extention
+Shared Lib = .so extension
+==================================
+nm = list the table of the object file
+nm file.o
+==================================
+ldd examine the executable and displays a list of the shared libraries
+that it needs
+==================================
+CMake Issues
+
+makefile consist of set of rules .A rule consist of  3 parts;
+ - > target
+ - > a list of  pre-requisites
+ - > command
+
+--------------------------------
+ target: pre-req-1 pre-req-2 ...
+	command
+---------------------------------
